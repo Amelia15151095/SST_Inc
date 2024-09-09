@@ -1,19 +1,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var alertShown = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hi, world!")
-            Text("Ahhhhhhhh")
-            Text("hi")
-                .fontWeight(.heavy)
+            Button{
+                alertShown = true
+            } label: {
+                Text ("Click Me!")
+            }
         }
-        .padding()
+        .alert(Text("Alert! No one asked"), isPresented: $alertShown) {
+            Button("Ok") {
+                print("Ok")
+            }
+        }
     }
-}
+    }
+
 
 #Preview {
     ContentView()

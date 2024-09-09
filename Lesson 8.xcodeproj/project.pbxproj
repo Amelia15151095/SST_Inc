@@ -217,6 +217,9 @@
 				Base,
 			);
 			mainGroup = E7CFDE142C8EE1AB00BA6425;
+			packageReferences = (
+				E7CFDE4B2C8EED4300BA6425 /* XCRemoteSwiftPackageReference "SwiftPersistence" */,
+			);
 			productRefGroup = E7CFDE1E2C8EE1AB00BA6425 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -609,6 +612,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E7CFDE4B2C8EED4300BA6425 /* XCRemoteSwiftPackageReference "SwiftPersistence" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cheesetan/SwiftPersistence";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = E7CFDE152C8EE1AB00BA6425 /* Project object */;
 }
